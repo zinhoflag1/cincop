@@ -10,7 +10,7 @@
 	    <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
 
 	</head>
-	<body class="bg-success">
+	<body>
 
 		<!-- barra de ferramentas -->
 	<div class="col-md-12 barraFerramenta">
@@ -39,6 +39,8 @@
 	<div class="col-md-2 lateral-esquerda">lateral esquerda</div>
 
 	<div class="col-md-8">
+
+		<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
 
 	<?php
 
@@ -152,6 +154,7 @@ $cliente = array("vazio" => array(
 	
 	<!--google analitic-->
 	<!-- validation -->
+	<script src="{{asset('site/js/jquey.js')}}"></script>
 	<script>
 
 		/* remover ponto */
