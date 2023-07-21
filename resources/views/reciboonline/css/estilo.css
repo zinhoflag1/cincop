@@ -1,0 +1,64 @@
+
+body{
+	background-color: #3CB371;
+	/*background-image: url("../image/bg_pg.png");*/
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+	
+}
+
+.barraFerramenta {
+	background-color: #1C1C1C;
+ 	height: 30px;
+ 	line-height: 30px;
+}
+
+.lateral-direita{
+	background-color: #EFFBEF;
+	min-height: 600px;
+}
+.lateral-esquerda {
+	background-color: #EFFBEF;
+}
+
+.titulo {
+	text-align: center;
+}
+
+div[class^="lateral-"], div[class*=" lateral-"] {
+	color: #000000;
+}
+
+a.end a:visited {
+	text-decoration: none;
+}
+.rodape {
+	height: 100px;
+	background-color: #000000;
+	font-size: 9pt;
+	line-height: 30px;
+
+}
+
+p.linha{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.topo {
+	background-color: rgb(32, 31, 117);
+	background-image: url('../image/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+}
+
+.requerido {
+
+	background-color: #A9F5BC;
+}

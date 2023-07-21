@@ -1,0 +1,41 @@
+
+body {
+	padding: 0;
+	margin: 0;	
+	background-color: #A9A9F5;
+}
+
+.recibo {
+	background-color: #F2F2F2;
+}
+
+
+
+.titulo {
+	text-align: center;
+}
+
+.titulo2 {
+	font-size: 10px;
+
+}
+
+.rodape {
+	height: 100px;
+
+}
+@media print {
+
+	body{
+		margin: 2.5cm;
+	}
+
+	.imprimir{
+		display:none;
+	}	
+}
+
+.linha{
+	padding: 0 !important;
+	margin: 0 !important;
+}
