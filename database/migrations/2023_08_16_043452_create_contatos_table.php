@@ -11,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('contatos', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
-            $table->integer('id_empresas')->comment('Identificador da Empresa')->nullable();
+            $table->string('tb_nome', 20)->comment('Nome da Tabela');
+            $table->integer('tb_id')->comment('Identificador da Tabela');
+            $table->set('tipos', ['tel', 'cel', 'email'])->comment('Tipo do Contato');
+            $table->string('val', 80)->comment('Contato');
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('contatos');
     }
 };
