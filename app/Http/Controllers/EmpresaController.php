@@ -13,11 +13,12 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        Mail::send([], [], function ($message) {
-            $message->to('my@email.com')
-              ->subject('my subject')
-              ->setBody('Hi, welcome user!'); 
-        });
+        
+        // Mail::send([], [], function ($message) {
+        //     $message->to('my@email.com')
+        //       ->subject('my subject')
+        //       ->setBody('Hi, welcome user!'); 
+        // });
     }
 
     /**
