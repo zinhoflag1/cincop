@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('empresas', function (Blueprint $table) {
+        Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nome', 110)->comment('Nome da Empress');
-            $table->string('fantas', 110)->comment('Nome Fansasia da Empresa');
-            $table->string('cnpj', 20)->comment('Cnpj da Empresa');
+            $table->string('nome', 70)->comment('Nome do Cliente/Razão Social');
+            $table->string('fantasia', 70)->comment('Nome Fantasia');
+            $table->string('cpfcnpj', 2)->comment('CPF/CNPJ do Cliente');
+            $table->string('pfpj', ['pf', 'pj'])->comment('Pessoa Física/Pessoa Jurídica');
+            $table->string('ci_ie', 18)->comment('Carteira de Identidade/Inscrição Estadual');
             $table->string('endereco', 110)->comment('Endereço da Empresa');
             $table->string('numero', 15)->comment('Número do Endereço');
             $table->string('bairro', 50)->comment('Bairro da Empresa');
@@ -35,7 +37,7 @@ return new class extends Migration
             $table->text('ram_emp')->comment('Ramo de Atividades da Empresa');
             $table->text('atv_emp')->comment('Descrição Atividades da Empresa');
             $table->date('dt_fund')->comment('Data de Fundação da Empresa');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('empresa_id')->references('id')->on('empresas');
         });
     }
 
@@ -44,6 +46,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('empresas');
+        Schema::dropIfExists('clientes');
     }
 };

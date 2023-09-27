@@ -1,0 +1,56 @@
+#### ORÇAMENTO #####
+id
+num_orcamento
+data_orcamento
+cliente_id
+nome cliente
+contato_tel
+endereço
+bairro
+cidade
+estado
+cep
+forma_pagamento
+	[dinheiro, cartao, cheque]
+parcelas
+obs
+
+#### ITEM SERVICO ####
+id
+orcamento_id
+material_id
+qtd
+valor
+desconto
+
+
+
+#### SERVIÇO ####
+id
+num_os
+orcamento_id
+cliente_id
+nome_cliente
+contato_tel
+endereço
+bairro
+cidade
+estado
+cep
+forma_pagamento
+	[dinheiro, cartao, cheque]
+parcelas
+obs
+situacao
+	0= em Aberto
+	1= executado
+	2= cancelado
+
+#### ITEM SERVICO ####
+id
+servico_id
+material_id
+qtd
+valor
+desconto
+

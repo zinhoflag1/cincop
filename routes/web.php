@@ -32,4 +32,8 @@ Route::middleware('auth')->group(function () {
 
 Route::get('empresa', [EmpresaController::class, 'index']);
 
+
+# clientes 
+Route::get('cliente', [ClienteController::class, 'index']);
+
 require __DIR__.'/auth.php';

@@ -13,34 +13,32 @@
                         <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="index.html">Dashboard 1</a>
+                            <a href="index.html">Usuários</a>
                         </li>
                         <li>
-                            <a href="index2.html">Dashboard 2</a>
+                            <a href="index2.html">Configurações</a>
                         </li>
                         <li>
-                            <a href="index3.html">Dashboard 3</a>
+                            <a href="index3.html">Dados Empresas</a>
                         </li>
-                        <li>
-                            <a href="index4.html">Dashboard 4</a>
-                        </li>
+                        
                     </ul>
                 </li>
                 <li>
-                    <a href="chart.html">
-                        <i class="fas fa-chart-bar"></i>Charts</a>
+                    <a href="{{url('cliente')}}">
+                        <i class="fas fa-chart-bar"></i>Clientes</a>
                 </li>
                 <li>
                     <a href="table.html">
-                        <i class="fas fa-table"></i>Tables</a>
+                        <i class="fas fa-table"></i>Fornecedores</a>
                 </li>
                 <li>
                     <a href="form.html">
-                        <i class="far fa-check-square"></i>Forms</a>
+                        <i class="far fa-check-square"></i>Materiais</a>
                 </li>
                 <li>
                     <a href="calendar.html">
-                        <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        <i class="fas fa-calendar-alt"></i>Orçamentos</a>
                 </li>
                 <li>
                     <a href="map.html">
