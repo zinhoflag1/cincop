@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('nome', 70)->comment('Nome do Cliente/Razão Social');
             $table->string('fantasia', 70)->comment('Nome Fantasia');
-            $table->string('cpfcnpj', 2)->comment('CPF/CNPJ do Cliente');
+            $table->string('cpfcnpj', 20)->comment('CPF/CNPJ do Cliente');
             $table->string('pfpj', ['pf', 'pj'])->comment('Pessoa Física/Pessoa Jurídica');
             $table->string('ci_ie', 18)->comment('Carteira de Identidade/Inscrição Estadual');
             $table->string('endereco', 110)->comment('Endereço da Empresa');
