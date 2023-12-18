@@ -221,8 +221,16 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                                <form method="POST" action="{{ route('logout') }}">
+                                                    @csrf
+                                                    <a href="route('logout')"
+                                                        onclick="event.preventDefault();
+                                                                this.closest('form').submit();" title="Sair com segurança do SDC">
+                                                        {{ __('Log Out') }}
+                                                    </a>
+                                    
+                                                </form>
+                                                    
                                             </div>
                                         </div>
                                     </div>
