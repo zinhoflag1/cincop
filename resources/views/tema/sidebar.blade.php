@@ -16,7 +16,7 @@
                             <a href="index.html">Usuários</a>
                         </li>
                         <li>
-                            <a href="index2.html">Configurações</a>
+                            <a href="{{ url('empresa') }}">Configurações</a>
                         </li>
                         <li>
                             <a href="index3.html">Dados Empresas</a>

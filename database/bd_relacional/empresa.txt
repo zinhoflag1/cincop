@@ -1,0 +1,24 @@
+#### ORÇAMENTO #####
+id
+nome_empresa
+Nome da Empress
+            Nome Fansasia da Empresa
+            Cnpj da Empresa
+            Endereço da Empresa
+            Número do Endereço
+            Bairro da Empresa
+            Cidade da Empresa
+            Estado da Empresa
+            UF da Empresa
+            Cep da Empresa
+            Ponto de Referencia Endereço da Empresa
+            Telefone da Empresa
+            Email da Empresa
+            Representante da Empresa
+            CPF do Representante da Empresa
+            Celular do Representante da Empresa
+            Telefone do Representante da Empresa
+            Email do Representante da Empresa
+            Ramo de Atividades da Empresa
+            Descrição Atividades da Empresa
+            Data de Fundação da Empresa

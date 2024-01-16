@@ -13,6 +13,8 @@ class EmpresaController extends Controller
      */
     public function index()
     {
+
+        return view('empresa.index', []);
         
         // Mail::send([], [], function ($message) {
         //     $message->to('my@email.com')

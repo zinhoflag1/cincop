@@ -31,7 +31,7 @@
          </div>
 
          <!--Topo -->
-         <div class="col-md-12 p-3 topo">
+         <div class="p-3 col-md-12 topo">
              <div class="row">
                  <div class="col-md-2">
                  </div>
@@ -39,7 +39,7 @@
                      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
                      {{-- <img src="image/logo.png"> --}}
                  </div>
-                 <div class="col-md-6 text-center">
+                 <div class="text-center col-md-6">
 
                      <h3 style="color:#3CB371">Gerador de Recibo on-line Grátis</h3>
                  </div>
@@ -51,7 +51,7 @@
              </div>
          </div>
 
-         <div class="container">
+         <div class="rounded" style="background-color: #3CB371; height: 100vh;">
              <div class="row">
 
                  <!-- lateral esquerda-->
@@ -59,7 +59,7 @@
 
                  <div class="col-md-8">
 
-                     <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                     <div class="p-3 mb-2 text-white bg-primary">.bg-primary</div>
 
                      <?php
                      
@@ -155,7 +155,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-md-12 text-center">
+                         <div class="text-center col-md-12">
                              <br>
                              <input class="btn btn-orange" type="submit" name="btnEnviar" id="btnEnviar" value="Gerar Recibo">
                          </div>
@@ -164,7 +164,7 @@
 
                  <div class="col-md-2 lateral-direita">lateral direita</div>
 
-                 <div class="col-md-12 text-center rodape">
+                 <div class="text-center col-md-12 rodape">
                      <br>
                      Todos os direitos reservados - Gerador de Recibo on-line<br>
                      Desenvolvido por <a class="end" href="http://www.cincopassos.com.br">Cinco Passos Sistemas</a>

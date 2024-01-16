@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="animsition">
+<body class="">
     <div class="page-wrapper">
         <div class="page-content--bge5">
             <div class="container">
@@ -45,16 +45,17 @@
                             <a href="#">
                                 <img src="imagens/logo_servicemanager.png" width="300" alt="CoolAdmin">
                             </a>
-                        </div>
+                        </div>                   
+
                         <div class="login-form">
                             <form action="{{ route('login') }}" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <input class="au-input au-input--full @error('email') is-invalid @enderror" type="email" name="email" placeholder="E-mail">
+                                    <input class="au-input au-input--full @error('email') is-invalid @enderror" type="email" name="email" placeholder="E-mail" >
                                     @error('email')
-                                        <span class="invalid-feedback" role="alert">
+                                        <div class="invalid-feedback d-block" role="alert">
                                             <strong>{{ $message }}</strong>
-                                        </span>
+                                        </div>
                                     @enderror
 
                                 </div>
@@ -67,7 +68,7 @@
                                     </label>
                                     <label>
                                         @if (Route::has('password.request'))
-                                            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                                            <a class="text-sm text-gray-600 underline rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                                                 Esqueceu a Senha ?
                                             </a>
                                         @endif
@@ -76,8 +77,8 @@
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Entrar</button>
                                 <div class="social-login-content">
                                     <div class="social-button">
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">Entrar com o facebook</button>
-                                        <button class="au-btn au-btn--block au-btn--blue2">Entrar com o twitter</button>
+                                        {{-- <button class="au-btn au-btn--block au-btn--blue m-b-20">Entrar com o facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">Entrar com o twitter</button> --}}
                                     </div>
                                 </div>
                             </form>
